@@ -4,6 +4,8 @@ A comprehensive Android laboratory designed to demonstrate, test, and bypass var
 
 ## 🚀 Overview
 
+![App Screenshot](assets/screenshot.png)
+
 This app provides a controlled environment to practice mobile security research. It implements six different layers of SSL Pinning, ranging from standard high-level configurations to low-level native NDK implementations.
 
 ### Features
