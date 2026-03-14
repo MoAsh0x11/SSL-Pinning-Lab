@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+
+    <!-- Pinning for the actual request made by the app -->
+    <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true">sha256.badssl.com</domain>
+        <pin-set expiration="2030-01-01">
+            <pin digest="SHA-256">2jOcxjeYdyYgEbe5WeORT5/nBtRXXZBZMRherlhXZ4c=</pin>
+        </pin-set>
+    </domain-config>
+
+    <!-- INTENTIONAL FAKE PIN FOR DETECTION -->
+    <!-- We pin google.com to a garbage hash so the default System trust fails. -->
+    <!-- If google.com succeeds, it means Frida hooked SSLContext and bypassed NSC entirely! -->
+    <domain-config cleartextTrafficPermitted="false">
+        <domain includeSubdomains="true">google.com</domain>
+        <pin-set expiration="2030-01-01">
+            <pin digest="SHA-256">AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</pin>
+        </pin-set>
+    </domain-config>
+
+</network-security-config>

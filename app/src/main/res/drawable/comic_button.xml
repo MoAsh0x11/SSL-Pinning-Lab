@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Cartoon Hard Shadow (Offset) -->
+    <item android:top="8dp" android:left="8dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#F4F4F0"/> 
+            <stroke android:width="3dp" android:color="#F4F4F0"/>
+        </shape>
+    </item>
+    
+    <!-- Main Button Body Body -->
+    <item android:bottom="8dp" android:right="8dp" android:id="@+id/main_body">
+        <shape android:shape="rectangle">
+            <solid android:color="#139090" /> 
+            <stroke android:width="3dp" android:color="#F4F4F0"/>
+        </shape>
+    </item>
+
+    <!-- The Distress/Grunge Texture Overlay -->
+    <!-- We use an inset to make sure it only sits inside the main body area -->
+    <item android:bottom="8dp" android:right="8dp">
+        <bitmap 
+            android:src="@drawable/distress_texture"
+            android:tileMode="repeat"
+            android:alpha="0.25"
+            android:tint="#121418" />
+    </item>
+</layer-list>
