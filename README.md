@@ -38,11 +38,20 @@ This repository includes several scripts to test the robustness of the implement
 
 ## 🎸 Built with Vibe Coding
 
-This project is a product of **Vibe Coding**. Instead of manual boilerplate and traditional debugging, the entire architecture—from the NDK integration to the complex Frida bypass logic—was orchestrated through high-level intent and AI collaboration.
+This project is a product of **Vibe Coding**. Instead of treating AI as a "black box" shortcut, it was utilized as a **collaborative mentor** to deconstruct and implement each security layer from the ground up.
 
-- **Fast Iteration**: Complex security flaws (like OkHttp chain cleaning interference) were diagnosed and patched autonomously.
-- **AI-Native Security**: Implementation of both the security "walls" and the "ladders" (Frida scripts) to climb over them.
-- **Surgical Logic**: Custom background threads for bypass detection were tuned to avoid false positives by isolating network layers.
+### Why Vibe Coding?
+The goal wasn't just to have a working app, but to **deeply understand the "Why" and "How"** behind every byte of the implementation. By building the security walls with AI, we gained an intimate knowledge of:
+- The exact memory addresses where NDK comparisons happen.
+- How Kotlin's internal mangling affects OkHttp's runtime behavior.
+- The precise handshake moments where TrustManagers take control.
+
+### No Shame in the AI Game
+There is a common stigma about using AI to "skip the work." This project proves the opposite: **using AI to understand the implementation is the ultimate form of work.** Having mastered the defense logic through this collaborative build, using AI to directly bypass these methods in the future isn't "cheating"—it's an efficient application of the research and engineering knowledge gained here. 
+
+- **Deep Learning**: Complex security flaws were diagnosed and patched autonomously to understand their root causes.
+- **Architectural Mastery**: AI helped map the relationship between Java networking and Native C++ verification.
+- **Strategic Efficiency**: Mastery of the implementation details makes direct AI-assisted bypassing a valid, expert-level research technique.
 
 ---
 
